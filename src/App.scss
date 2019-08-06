@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap');
+
+$black: #161616;
+$red: #FD5151;
+$yellow: #FDCF51;
+
+html {
+    overflow-x: hidden;
+   
+}
+
+.main {
+    visibility: hidden;
+    font-family: 'Poppins', sans-serif;
+} 
+
+.header-container {
+    width: 1180px;
+    margin: 0 auto;
+    .wrapper {
+        position: absolute;
+        color: #fff;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{ 
+            font-weight: 600;
+            font-size: 18px;
+            span:nth-child(1) {
+                color: $red;
+            }
+            span:nth-child(2) {
+                color: $yellow;
+            }
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 0;
+            li {
+                margin: 0 50px;
+                list-style: none;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+        .contact {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}
+
+.banner-bg {
+  height: 650px;
+  width: 100%;
+  background-color: $black;
+  .container {
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+      .cta {
+          height: 650px;
+          display: flex;
+          align-items: center;
+          .headline {
+            h2 {
+                color: #fff;
+                font-size: 52px;
+                font-weight: 700;
+                margin: 0;
+            }
+          }
+          .cta-button {
+              position: absolute;
+              color: #fff;
+              bottom: 50px;
+              left: 0;
+              cursor: pointer;
+              border-bottom: 3px solid $red;
+          }
+          .message {
+              width: 500px;
+              color: #fff;
+              position: absolute;
+              bottom: 150px;
+              right: 0;
+              span {
+                  font-weight: 300;
+                  font-size: 16px;
+              }
+          }
+      }
+  }
+}
+
+.newyork {
+    height: 1000px;
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        .image {
+            overflow: hidden;
+            position: absolute;
+            top: -100px;
+            right: 0;
+            width: 850px;
+            height: 1000px;
+            img {
+                width: 850px;
+               }
+        }
+    }
+}
